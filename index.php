@@ -83,11 +83,11 @@ $sql = "CREATE TABLE IF NOT EXISTS comptes (
         FOREIGN KEY (compte_id) REFERENCES comptes(compte_id)
     )";
 
-    // if ($conn->query($sql) === TRUE) {
-    //     echo "Transactions table created successfully";
-    // } else {
-    //     echo "Error creating transactions table: " . $conn->error;
-    // }
+    if ($conn->query($sql) === TRUE) {
+        echo "Transactions table created successfully";
+    } else {
+        echo "Error creating transactions table: " . $conn->error;
+    }
 
   // Insert data into clients
 // $sqlClients = "INSERT INTO clients (nom, prenom, date_naissance, nationalite, genre)

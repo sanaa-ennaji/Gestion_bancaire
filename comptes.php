@@ -40,7 +40,6 @@ if ($conn->connect_error) {
             <th>action</th>
         </tr>
         <?php
-// Check if category_id is set in the URL
 if (isset($_GET['client_id'])) {
     $client_id = $_GET['client_id'];
     $sql = "SELECT comptes.compte_id, comptes.balance, comptes.devise, comptes.client_id
